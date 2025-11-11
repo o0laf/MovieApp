@@ -1,6 +1,6 @@
 # Desarrollo-de-Aplicaciones-Moviles
 
-# 🎬 Proyecto React Native - Detalles de Película (TMDb)
+# 🎬 Proyecto React Native
 
 Fue desarrollado con React Native y Expo, e implementa un sistema completo de autenticación, gestión de usuarios y consumo de API externa (The Movie Database).
 
