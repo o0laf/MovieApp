@@ -12,7 +12,7 @@ export default function MovieCard({ movie, onPress }) {
       <View style={styles.info}>
         <Text style={styles.title}>{movie.title}</Text>
         <Text style={styles.overview} numberOfLines={3}>
-          {movie.overview}
+          {movie.overview || "Sin descripción disponible."}
         </Text>
       </View>
     </TouchableOpacity>
@@ -22,14 +22,30 @@ export default function MovieCard({ movie, onPress }) {
 const styles = StyleSheet.create({
   card: {
     flexDirection: "row",
-    backgroundColor: "#ffffffff",
+    backgroundColor: "#1E2429",
     borderRadius: 10,
     padding: 10,
-    margin: 20,
-    elevation: 3,
+    marginVertical: 8,
+    marginHorizontal: 4,
   },
-  poster: { width: 100, height: 150, borderRadius: 10 },
-  info: { flex: 1, marginLeft: 10, justifyContent: "center" },
-  title: { fontSize: 18, fontWeight: "bold", marginBottom: 5 },
-  overview: { fontSize: 14, color: "#555" },
+  poster: {
+    width: 100,
+    height: 150,
+    borderRadius: 10,
+  },
+  info: {
+    flex: 1,
+    marginLeft: 20,
+    justifyContent: "center",
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#E5E5E5",
+    marginBottom: 5,
+  },
+  overview: {
+    fontSize: 14,
+    color: "#9AA0A6",
+  },
 });
